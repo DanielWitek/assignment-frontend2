@@ -12,7 +12,7 @@
     "die",
     "Lokomotive"
   ],
-  "author": "Hannes Moser",
+  "author": "Daniel Witek",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.1.1",
