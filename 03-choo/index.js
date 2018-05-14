@@ -1,10 +1,12 @@
 const choo = require('choo');
 const html = require('choo/html');
 const emoji = require('node-emoji');
-const css = require('sheetify');
+
 const app = choo();
 
-css('bootstrap');
+require('./assets/styles/global'); // css einbinden & sheetify
+
+
 
 const styles = css`
   h1 {
@@ -15,7 +17,6 @@ const styles = css`
 const wagon = 'railway_car';
 const lok = 'steam_locomotive';
 
-// steam_locomotive
 app.model({
   state: {
     loks:[ lok , lok , lok, lok ],
