@@ -1,0 +1,42 @@
+<h3>Style</h3>
+
+<h4>Text with Style</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-style" viewBox="0 0 500 100">
+      <style>
+        .small { font: italic 10px sans-serif; }
+        .big { font: bold 30px sans-serif; }
+      </style>
+
+      <text x="20" y="35" class="small">Hello</text>
+      <text x="60" y="60" class="big">world</text>
+
+    </svg>
+  </div>
+</div>
+
+<h4>Patterns</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-style" viewBox="0 0 500 100">
+      <style>
+        #pattern rect {
+          fill: #ff0000;
+        }
+
+        #pattern line {
+          stroke: #ff6600;
+        }
+      </style>
+      <defs>
+        <pattern id="pattern" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45 50 50)">
+          <rect width="10" height="10"/>
+          <line stroke-width="2px" y2="10"/>
+          {{!-- <animateTransform attributeName="patternTransform" type="translate" by="10" dur="1s" repeatCount="indefinite"/> --}}
+        </pattern>
+      </defs>
+      <rect width="400" height="100" fill="url(#pattern)"/>
+    </svg>
+  </div>
+</div>
